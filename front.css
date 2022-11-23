@@ -113,7 +113,7 @@ a  p{
         padding: 100px;
         border: none;
         border-radius: 5px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bolder;
     }
 
@@ -122,7 +122,7 @@ a  p{
         background-color: #0c5298;
     }
     #padded {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 
