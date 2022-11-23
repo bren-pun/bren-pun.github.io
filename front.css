@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+
+.container {
+    /* covers all the webpage */
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background: url('sti5.png');
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+
+    grid-column-start:1;
+    grid-column-end:13;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.nav .logo {
+    margin-right: 75%;
+}
+
+.nav > a{
+    margin: 10px;
+    background-color: none;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a  p{
+    --s: 0.0em;   /* the thickness of the line */
+  --c: #00b3ff; /* the color */
+  
+  color: rgba(246, 233, 233, 0);
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,rgb(255, 255, 255) 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+
+}
+
+.nav > a:hover {
+    --_p: 100%
+
+  }
+
+
+
+.page-contain{
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.page-hidden{
+    display: none;
+}
+
+
+
+@media(max-width: 700px){
+    .nav .logo {
+        margin-right: 2%;
+    }
+    .container .page-hidden{
+        grid-column-start:4;
+        grid-column-end:10;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .page-hidden{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+    
+    .page-hidden > a{
+        color: black;
+        text-decoration: none;
+        background-color: azure;
+        text-align: center;
+        justify-content: center;
+        padding: 100px;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .page-hidden > a:hover{
+        color: white;
+        background-color: #0c5298;
+    }
+    #padded {
+        margin-top: 50px;
+    }
+}
+
+
+
