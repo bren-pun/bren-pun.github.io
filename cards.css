@@ -141,3 +141,27 @@
         display: none;
       }
 }
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+.page-contain{
+  padding: 0.1;
+  width: 80vw;
+  margin-right: 50px;
+}
+
+  .data-card {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0.5em;
+    text-decoration: none;
+    background: white;
+    margin: 1em;
+    padding: 2.75em 2.5em;
+    box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, 0.1);
+    transition: transform 0.45s ease, background 0.45s ease;
+  }
+}
