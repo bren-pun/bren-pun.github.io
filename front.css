@@ -36,7 +36,7 @@ body{
 }
 
 .nav .logo {
-    margin-right: 400px;
+    margin-right: 70vw;
 }
 
 .nav > a{
@@ -113,7 +113,7 @@ a  p{
         padding: 70px;
         border: none;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bolder;
     }
 
@@ -122,7 +122,13 @@ a  p{
         background-color: #0c5298;
     }
     #padded {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .nav .logo {
+        margin-right: 55vw;
     }
 }
 
